@@ -10,7 +10,6 @@ type User struct {
 	PhoneNumber string `gorm:"varchar(20);not null;unique"`
 	Password    string `gorm:"size:255;not null"`
 	Avatar      string `gorm:"size:255;not null"`
-	List        Array  `gorm:"type:longtext"`
 	Collects    Array  `gorm:"type:longtext"`
 	Following   Array  `gorm:"type:longtext"`
 	Fans        int    `gorm:"AUTO_INCREMENT"`
